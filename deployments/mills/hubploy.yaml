@@ -1,12 +1,12 @@
 images:
-  image_name: # TODO: Full path to your docker image, based on the following pattern
+  image_name: gcr.io/ucb-datahub-2018/mills-user-image
   # On AWS: <account-id>.dkr.ecr.<zone>.amazonaws.com/<your-hub-name>-user-image
   # On Google Cloud: gcr.io/<project-name>/<your-hub-name>-user-image
   registry:
-    provider: # TODO: Pick 'gcloud' or 'aws', and fill up other config accordingly
+    provider: gcloud
     gcloud:
       # Pushes to Google Container Registry.
-      project: # TODO: GCloud Project Name
+      project: ucb-datahub-2018
       # Make a service account with GCR push permissions, put it in secrets/gcr-key.json
       service_key: gcr-key.json
     aws:
